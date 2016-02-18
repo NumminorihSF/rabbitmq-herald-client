@@ -1,6 +1,6 @@
 {
   "name": "rabbitmq-herald-client",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "Fork of herald-client that use rabbitmq as server to sending messages",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/NumminorihSF/rabbitmq-herald-client#readme",
   "dependencies": {
-    "bramqp-wrapper": "^0.12.0"
+    "bramqp-wrapper": "^0.12.1"
   }
 }
