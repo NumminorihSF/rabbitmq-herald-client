@@ -30,24 +30,6 @@ else {
     var a = new c({connect: {}, name: 'guest', uid: Math.random()});
     a.connect(function(err){
         console.log('connect', err);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         a.getChannel(function(err, chan, done){
             console.log('chan get', err);
             chan.confirm.select(function(){
