@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/NumminorihSF/rabbitmq-herald-client#readme",
   "dependencies": {
-    "bramqp-wrapper": "^0.12.1"
+    "bramqp-wrapper": "^0.12.2"
   }
 }
