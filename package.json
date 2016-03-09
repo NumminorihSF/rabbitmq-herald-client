@@ -1,6 +1,6 @@
 {
   "name": "rabbitmq-herald-client",
-  "version": "0.10.30",
+  "version": "0.10.31",
   "description": "Fork of herald-client that use rabbitmq as server to sending messages",
   "main": "index.js",
   "scripts": {

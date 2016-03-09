@@ -68,10 +68,10 @@ In this example hc will try connect to `127.0.0.1:8765`.
 * `.uid` - String|Numeric - your application unique identified. 
 Default: `name + '_' + Math.floor(Math.random()*1000000)`
 * `.messageMaker` - Object. Some module, that make and parse messages. See below. Default: `crypt-maker`
-* `.connect` - Object. Options for new.Socket.connect. Default: `{port: 8765}` 
+* `.connect` - Object. Options for new.Socket.connect. Default: `{port: 5672, user: 'guest', password:'guest'}` 
  
 See [https://nodejs.org/api/net.html#net_net_connect_options_connectionlistener]
-(https://nodejs.org/api/net.html#net_net_connect_options_connectionlistener). Default: `{port:8765}`
+(https://nodejs.org/api/net.html#net_net_connect_options_connectionlistener). Default: `{port:5672}`
 
 If use `crypt-maker` and if `algorithm && algorithm !== 'no'` and no key passed to constructor - throws error.
 
@@ -87,6 +87,9 @@ Supports the following properties:
   * `port` {Number} [optional]
   * `host` {String} [optional]
   * `backlog` {Number} [optional]
+  * `vhost` {String} [optional] AMQP parameter. default `'/'`
+  * `user` {String} [optional] AMQP parameter. default `'guest'`
+  * `password` {String} [optional] AMQP parameter. default `'guest'`
   * `path` {String} [optional]
   * `exclusive` {Boolean} [optional]
 
